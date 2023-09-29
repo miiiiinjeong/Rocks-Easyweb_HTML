@@ -1,3 +1,12 @@
 w3schools.com
 -> lang code가 궁금할 경우, 구글에 'w3school lang codes'로 검색하면 쉽게 알 수 있음
 
+w3c
+-> 태그의 정석 사용법을 알려줌
+
+https://validator.w3.org/
+->웹 사이트 유효성검사
+
+entitycode.com
+->웹표준 특수문자 사이트
+
