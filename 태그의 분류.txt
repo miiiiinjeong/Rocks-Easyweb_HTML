@@ -1,0 +1,10 @@
+-블록레벨 요소
+   ex) h1,h2,h3,h4,h5,h6(제목들), p(paragraph, 문단), ul,ol,dl(리스트), li(리스트항목), table(표), div(아무의미 없음, 박스), header(내용의 헤드), section(내용들의 덩어리), article(단일 내용, 기사등), aside(좌우배치되는 요소들), footer(하단 반복 요소들), nav(사이트 메뉴 묶기) 
+-인라인 레벨 요소
+   ex) a(anchor, 링크), span(소단위의 글씨), input, label, i(i태그), b, em, strong 등
+
+dummytext
+->lorem(vscode)
+->lipsum.com
+
+w3school block level element
