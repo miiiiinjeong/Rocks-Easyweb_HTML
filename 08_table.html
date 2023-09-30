@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 - table</title>
+    <style>
+        /* CSS 문법 영역 */
+        .col1{
+            width: 30px;
+        }
+        .col2{
+            width: 300px;
+        }
+        .col3{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>테이블</h1>
+    <p>
+        일정표, 달력, 게시판, 이력서양식
+    </p>
+    <table border="1"> <!-- 임시 비표준 -->
+        <tr>
+            <td width="30">구분</td> <!-- table data, 한 칸, 한 셀 -->
+            <td width="300">제목1</td>
+            <td width="50">제목2</td>
+            <td width="50">제목3</td>
+        </tr> <!-- table row -->
+        <tr>
+            <td>1</td>
+            <td>data11</td>
+            <td>data12</td>
+            <td>data13</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>data21</td>
+            <td>data22</td>
+            <td>data23</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>data31</td>
+            <td>data32</td>
+            <td>data33</td>
+        </tr>
+        <tr>
+            <td>합계</td>
+            <td>totla1</td>
+            <td>totla2</td>
+            <td>totla3</td>
+        </tr>
+    </table>
+    <figure>
+        <figcaption>
+            <h2>일정표</h2>
+            <p>1/4분기 일정표</p>
+        </figcaption>
+        <table border="1"> <!-- 올바른 작성법(table안에 border를 넣은건 올바른 작성법이 아님) -->
+            <!-- 제일 좋은 방법은 아니지만, 이전 표보다는 쬐끔 나은 방법 -->
+            <!-- <colgroup>
+                <col width="30"/>
+                <col width="300"/>
+                <col width="50"/>
+                <col width="50"/>
+            </colgroup> -->
+            <!-- 제일 좋은 방법 -->
+            <colgroup>
+                <col class="col1"/>
+                <col class="col2"/>
+                <col class="col3"/>
+                <col class="col3"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>구분</th> <!-- table data, 한 칸, 한 셀 -->
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>
+                </tr> <!-- table row -->
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>data11</td>
+                    <td>data12</td>
+                    <td>data13</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>data21</td>
+                    <td>data22</td>
+                    <td>data23</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>data31</td>
+                    <td>data32</td>
+                    <td>data33</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">합계</th>
+                    <td>totla1</td>
+                    <td>totla2</td>
+                    <td>totla3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>구분</th> <!-- table data, 한 칸, 한 셀 -->
+                <th scope="col">제목1</th>
+                <th scope="col">제목2</th>
+                <th scope="col">제목3</th>
+            </tr> <!-- table row -->
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>data11</td>
+                <td colspan="2">data12</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td rowspan="2">data21</td>
+                <td>data22</td>
+                <td>data23</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>data32</td>
+                <td>data33</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">합계</th>
+                <td>totla1</td>
+                <td>totla2</td>
+                <td>totla3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
