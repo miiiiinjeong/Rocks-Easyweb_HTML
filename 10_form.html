@@ -39,6 +39,7 @@
             <div>
                 <label for="address">거주지를 선택해주세요</label>
                 <select name="address" id="address">
+                    <!-- <option value="직접입력">직접입력</option> -->
                     <option value="서울시">서울시</option>
                     <option value="경기도">경기도</option>
                     <option value="제주도">제주도</option>
@@ -69,14 +70,14 @@
                 <label for="Javascript">Javascript</label>
                 <input type="checkbox" id="Javascript" name="interest" value="Javascript">
             </div>
-            <p>
-                <label for="introduce">인사말</label>
-            </p>
-                <textarea id="introduce" name="introduce" rows="8" cols="30">소개말을 입력해 주세요.</textarea>
-            <p>
-                <label for="profileimage">프로필 이미지 등록</label>
-                <input type="file" name="profileimage" id="profileimage" accept=".jpg, .jpeg, .png">
-            </p>
+            <div>
+                <label for="greeting">인사말</label>=
+                <textarea name="greeting" id="greeting" cols="40" rows="10">소개말을 입력해 주세요.</textarea>
+            </div>
+            <div>
+                <label for="profile">프로필 이미지 등록</label>
+                <input type="file" id="profile" name="profile" accept=".jpg, .jpeg, .png">
+            </div>
         </fieldset>
         <fieldset>
             <legend>HTML5 새로운 타입</legend>
@@ -124,6 +125,16 @@
                 <label for="phone">phone</label>
                 <input type="text" id="phone" name="phone" pattern="[0-9]{1,11}" maxlength="11" title="숫자만 최대 11자리까지 입력해주세요">
             </div>
+            <div>
+                <label for="useremails">이메일 선택</label>
+                <input type="text" id="useremails" name="useremails">@
+                <select title="이메일 서비스 선택" multiple size="1">
+                    <option value="직접입력">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+            </div>
         </fieldset>
         <!-- <input type="submit" value="전송"> -->
         <button>전송</button>
@@ -132,5 +143,13 @@
         <button><img src="images/send.png" alt="send"></button>
         <button type="reset">초기화</button>
     </form>
+    <hr>
+    <meter value="3" max="10" min="0"></meter>
+    <progress value="3" max="10" min="0"></progress>
+
+    <!-- div.progress>div.bar -->
+    <div class="progress">
+        <div class="bar"></div>
+    </div>
 </body>
 </html>
