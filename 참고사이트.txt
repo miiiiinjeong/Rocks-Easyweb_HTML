@@ -12,3 +12,10 @@ entitycode.com
 
 iconfinder.com
 ->아이콘 참고사이트
+
+jqueryui.com
+->jquery이용해서 ui디자인 변경
+- ex) input type="number"의 버튼 모양 변경 가능
+
+cleave js
+->input의 전화번호나 날짜 같은 입력 패턴을 만들어 줌

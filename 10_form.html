@@ -69,6 +69,61 @@
                 <label for="Javascript">Javascript</label>
                 <input type="checkbox" id="Javascript" name="interest" value="Javascript">
             </div>
+            <p>
+                <label for="introduce">인사말</label>
+            </p>
+                <textarea id="introduce" name="introduce" rows="8" cols="30">소개말을 입력해 주세요.</textarea>
+            <p>
+                <label for="profileimage">프로필 이미지 등록</label>
+                <input type="file" name="profileimage" id="profileimage" accept=".jpg, .jpeg, .png">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 새로운 타입</legend>
+            <p>
+                <label for="website">website</label>
+                <input type="url" id="website" name="website">
+            </p>
+            <p>
+                <label for="birth">생년월일</label>
+                <input type="date" id="birth" name="birth">
+            </p>
+            <p>
+                <label for="langs">학습할 언어 선택</label>
+                <input id="langs" name="langs" list="mylist">
+                <datalist id="mylist">
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="career">경력기간</label>
+                <input type="number" id="career" name="career" min="0" max="10" value="0" step="1">
+            </p>
+            <div>
+                <label for="language">학습언어 선택</label>
+                <select name="language" id="language">
+                    <optgroup label="frontend">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                    </optgroup>
+                    <optgroup label="backend">
+                        <option value="asp">asp</option>
+                        <option value="jsp">jsp</option>
+                        <option value="php">php</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="skill">숙련도</label>
+                <input type="range" id="skill" name="skill" min="0" max="10" value="5">
+            </div>
+            <div>
+                <label for="phone">phone</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{1,11}" maxlength="11" title="숫자만 최대 11자리까지 입력해주세요">
+            </div>
         </fieldset>
         <!-- <input type="submit" value="전송"> -->
         <button>전송</button>
