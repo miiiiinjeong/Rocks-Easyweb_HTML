@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        button{
+            background-color: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="POST" novalidate>
+        <!-- 유효성 검사 끄기 novalidate -->
+        <!-- novalidate = input에 required입력해 놨을 떄, 브라우저별로 뜨는 안내창 없애주는거 -->
+        <fieldset>
+            <legend>필수입력</legend>
+            <p>
+                <label for="username">이름:</label>
+                <input type="text" name="username" id="username" required="required" minlength="2" maxlength="5" size="10" value="홍길동">
+                <!-- size는 css에서 바꾸는게 좋으므로 비추 -->
+                <!-- value는 input박스에 다른값을 입력해도 글씨가 사라지지 않음 -->
+            </p>
+            <p>
+                <label for="useremail">이메일:</label>
+                <input type="email" name="useremail" id="useremail" required placeholder="이메일">
+                <!-- placeholder는 input박스에 다른값을 입력하면 글씨가 사라짐 -->
+            </p>
+            <p>
+                <label for="userpw">비밀번호:</label>
+                <input type="password" name="userpw" id="userpw" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>부가 입력</legend>
+            
+        </fieldset>
+        <!-- <input type="submit" value="전송"> -->
+        <button>전송</button>
+        <!-- 버튼은 기본값이 submit이기 때문에 type을 안적어도 됨 -->
+        <input type="image" src="images/send.png" alt="send">
+        <button><img src="images/send.png" alt="send"></button>
+        <button type="reset">초기화</button>
+    </form>
+</body>
+</html>
