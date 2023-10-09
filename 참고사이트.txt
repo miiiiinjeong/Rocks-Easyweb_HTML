@@ -22,3 +22,11 @@ cleave js
 
 caniuse.com
 -> 웹브라우저별 사용할 수 있는 태그인지 확인
+
+cloudinary.com
+->외부 트래픽 서버 이용
+->무료 10GB traffic
+
+www.vimeo.com
+-> iframe으로 영상 당겨올 때, youtube보다 화면이 깔끔함
+-> 무료서비스는 한계가 있음
